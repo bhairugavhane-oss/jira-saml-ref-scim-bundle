@@ -16,12 +16,6 @@
             <id>atlassian-plugin-sdk</id>
             <url>file://${env.ATLAS_HOME}/repository</url>
         </repository>
-        <repository>
-            <id>atlassian-public</id>
-            <url>https://packages.atlassian.com/maven/repository/public</url>
-            <releases><enabled>true</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
     </repositories>
     <organization>
         <name>miniOrange</name>
@@ -405,11 +399,6 @@
                     </scannedDependencies>
                     <verbose>false</verbose>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.10.0.2594</version>
             </plugin>
         </plugins>
     </build>
