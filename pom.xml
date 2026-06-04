@@ -523,6 +523,12 @@
             <artifactId>bcmail-jdk15on</artifactId>
             <version>1.70</version>
 <!--            <scope>compile</scope>-->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bouncycastle</groupId>
+                    <artifactId>bcprov-jdk15on</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
